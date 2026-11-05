@@ -88,7 +88,7 @@ export const mockTrip = (city: string, days: number): Trip => ({
   estimatedTotalBudget: "$35 - $55 / day",
   days: Array.from({ length: Math.max(1, Math.min(days, 5)) }, (_, i) => ({
     dayNumber: i + 1,
-    theme: ["Artisans & Old Town Shadows", "Markets, Murals & Monsoon Tea", "River Ghats & Forgotten Shrines", "Back-Alley Bites", "Hills at Golden Hour"][i],
+    theme: ["Artisans & Old Town Shadows", "Markets, Murals & Monsoon Tea", "River Ghats & Forgotten Shrines", "Back-Alley Bites", "Hills at Golden Hour"][i] ?? "Wandering Day",
     activities: [
       { timeSlot: "Morning", placeName: "The Brass-Beaters' Lane", category: "Culture", description: "Third-generation metalsmiths hammer vessels by hand in open-front workshops.", insiderTip: "Arrive before 9am — the elders work then and love explaining patterns.", approxCost: "Free", estimatedTimeSpent: "1.5 hours" },
       { timeSlot: "Afternoon", placeName: "Grandma's Courtyard Kitchen", category: "Food", description: "A family home serving a single rotating thali at lunchtime only.", insiderTip: "Ask for the pickle of the week; it's not on the board.", approxCost: "$4", estimatedTimeSpent: "1 hour" },
